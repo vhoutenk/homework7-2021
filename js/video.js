@@ -1,4 +1,5 @@
 var video = document.querySelector("#player1");
+var volSlider = document.querySelector("#slider");
 
 window.addEventListener("load", function() {
 	console.log("Good job opening the window")
@@ -10,7 +11,7 @@ document.querySelector("#play").addEventListener("click", function () {
 	console.log("Play Video");
 	video.play();
 	// update volume
-	document.querySelector("#volume").innerHTML = "100%"
+	document.querySelector("#volume").innerHTML = ''+volSlider.value+'%';
 });
 
 
@@ -100,7 +101,7 @@ document.querySelector("#mute").addEventListener("click", function () {
 });
 
 // volume control
-var volSlider = document.querySelector("#slider");
+//var volSlider = document.querySelector("#slider");
 
 volSlider.addEventListener("click", function () {
 
